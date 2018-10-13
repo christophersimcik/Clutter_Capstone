@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\chris\\Desktop\\apps\\Notes-20180731T035447Z-001\\Notes\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "C:\\Users\\chris\\Desktop\\apps\\Clutter_Capstone\\Notes\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\chris\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\a91209847c3f7c9fd4bc46014956df32\\res\\values-zh-rTW\\values-zh-rTW.xml",

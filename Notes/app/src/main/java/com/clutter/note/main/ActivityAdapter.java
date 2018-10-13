@@ -237,11 +237,8 @@ public class ActivityAdapter extends RecyclerView.Adapter <ActivityAdapter.ViewH
                             break;
                         case "B":
                             viewSwitcher.showNext();
-                           /* Intent bookIntent = new Intent(Intent.ACTION_WEB_SEARCH);
-                            bookIntent.putExtra(SearchManager.QUERY, "https://www.googleapis.com/books/v1/volumes?q="+stringData+"+subject&download=epub&key=AIzaSyCg0q-Km0sOyRPFKcD_4q-T6V3qq7cX6Bc");
-             new GoogleBooksJSON().execute("https://www.googleapis.com/books/v1/volumes?q="+stringData+"+subject&download=epub&key=AIzaSyCg0q-Km0sOyRPFKcD_4q-T6V3qq7cX6Bc");*/
                            Intent bookIntent = new Intent(context.getApplicationContext(),GoogleBooks.class);
-                           bookIntent.putExtra("url","https://www.googleapis.com/books/v1/volumes?q="+stringData+"+subject&download=epub&key=AIzaSyCg0q-Km0sOyRPFKcD_4q-T6V3qq7cX6Bc");
+                           bookIntent.putExtra("url","https://www.googleapis.com/books/v1/volumes?q="+stringData+"+subject&download=epub&key=<YOUR API HERE>");
                            context.startActivity(bookIntent);
                             break;
                         case "N":
