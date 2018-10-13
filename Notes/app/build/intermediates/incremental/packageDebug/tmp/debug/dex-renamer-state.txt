@@ -1,0 +1,13 @@
+#Tue Oct 09 22:13:03 PDT 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=C\:\\Users\\chris\\Desktop\\apps\\Notes-20180731T035447Z-001\\Notes\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\45
+base.2=C\:\\Users\\chris\\Desktop\\apps\\Notes-20180731T035447Z-001\\Notes\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\47
+base.1=C\:\\Users\\chris\\Desktop\\apps\\Notes-20180731T035447Z-001\\Notes\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\46
+base.0=C\:\\Users\\chris\\Desktop\\apps\\Notes-20180731T035447Z-001\\Notes\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\48

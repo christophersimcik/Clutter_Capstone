@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BFB9A4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/mov_mono"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIDEO:"
+                android:id="@+id/textView"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <com.clutter.note.main.AutoFit
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/movie_viewer" />
+
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#de000000"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <com.clutter.note.main.RecordView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/recording_button"
+                android:layout_marginRight="15dp" />
+            <com.clutter.note.main.CircleText
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/timer_display"
+                android:text="00:00:00"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Clutter</string>
+    <string name="indicator">indicator</string>
+    <string name="thumbnail">thumbnail</string>
+    <string name="submit">SUBMIT</string>
+    <string name="note">TITLE</string>
+    <string name="textColor">808080</string>
+    <string name="white_background">fafafa</string>
+    <string name="title">Title:</string>
+    <string name="term">Term:</string>
+</resources>

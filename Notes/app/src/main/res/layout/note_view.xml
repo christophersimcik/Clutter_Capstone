@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="25dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d5ebe5"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:measureWithLargestChild="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/note_mono"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTES:"
+            android:id="@+id/note_header"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/title_layout">
+        <View
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textCol"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|left"
+            android:paddingLeft="0dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:id="@+id/title_note"
+            android:textSize="25sp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical|bottom|right"
+            android:textColor="@color/textCol"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="textAutoComplete"
+            android:maxLength="20"
+            />
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/textCol"
+            android:layout_weight="8"
+            android:layout_gravity="center_vertical|right"
+            android:paddingLeft="0dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:isScrollContainer="false"
+        android:id="@+id/note_composer"
+        android:longClickable="false"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/viewSwitcher"
+        android:layout_weight="15"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="#808080"
+        android:inputType="textMultiLine|textCapWords|textCapSentences|textAutoComplete|textAutoCorrect" />
+
+    <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_weight="1"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+        android:layout_below="@+id/note_composer"
+        android:gravity="center">
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/textCol"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|left"
+                    />
+
+
+        <com.clutter.note.main.SubmitView
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:id="@+id/submit_note"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.clutter.note.main.CircleText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/submit_button"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <com.clutter.note.main.SubmitViewR
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:id="@+id/submit_b_note"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/textCol"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|right" />
+
+            </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/the_layout"
+    android:layout_marginBottom="5dp"
+    android:elevation="10dp"
+    >
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/indicator"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/indicator" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/lin_lay"
+            android:layout_gravity="center">
+
+            <ViewSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewSwitcher2"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_text" />
+                <com.clutter.note.main.WaitingView
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/custom_view"
+                    android:layout_gravity="center"
+                    />
+            </ViewSwitcher>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activty_img"
+            android:contentDescription="@string/thumbnail" />
+
+        <com.clutter.note.main.Eraser
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eraser_view"
+            />
+    </FrameLayout>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_border"
+        android:layout_height="1dp"
+        android:background="#808080"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

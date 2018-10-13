@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLineaLay"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+    <ViewSwitcher
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/viewSwitcher3" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <com.clutter.note.main.RecyclerGOTO
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/date_scroll">
+    </com.clutter.note.main.RecyclerGOTO>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="New Text"
+          android:id="@+id/dateViewAlt"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="5dp"
+          android:layout_gravity="center"
+          android:gravity="center" />
+    </LinearLayout>
+
+  </ViewSwitcher>
+
+  <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/workspace">
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/calendarList"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
